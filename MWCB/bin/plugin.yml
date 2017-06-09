@@ -1,0 +1,9 @@
+main: net.minewave.Main
+name: MWCB
+version: 1.b-0
+authors: [Turttles]
+commands:
+    gmc:
+        usage: /<command>
+        description: gmc command
+    
