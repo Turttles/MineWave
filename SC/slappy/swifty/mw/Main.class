@@ -1,0 +1,22 @@
+package mw.swifty.slappy;
+
+import org.bukkit.Bukkit;
+import org.bukkit.command.PluginCommand;
+import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class Main
+  extends JavaPlugin
+{
+  public void onEnable()
+  {
+    register();
+  }
+  
+  private void register()
+  {
+    Bukkit.getPluginManager().registerEvents(new MoveEvent(), this);
+    Bukkit.getPluginManager().registerEvents(new DamageEvent(), this);
+    getCommand("slappy").setExecutor(new Slappy());
+  }
+}
