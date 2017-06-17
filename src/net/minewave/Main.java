@@ -13,4 +13,4 @@ public class Main extends JavaPlugin {
 		
 		new TRegister(this);
 	}
-}
+}//ur an silly willly dillllly
